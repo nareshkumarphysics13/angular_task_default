@@ -1,0 +1,30 @@
+<div class="container" ng-controller="stateInfoController">
+	<div class="banner-top state_info_page">
+		<h1>{{stateNameInfo}} State info</h1>
+        <div class="clear">
+            <p> State Abbreviation <span>:</span> </p> {{stateDetailInfo.abbreviation}}
+        </div>
+        <div class="clear">
+            <p> State Capital <span>:</span> </p> {{stateDetailInfo.capital}}
+        </div>
+        <div class="clear">
+            <p> State Most Populous City <span>:</span> </p> {{stateDetailInfo['most-populous-city']}}
+        </div>
+        <div class="clear">
+            <p> State Population <span>:</span> </p> {{stateDetailInfo.population}}
+        </div>
+        <div class="clear">
+            <p> State square Miles <span>:</span> </p> {{stateDetailInfo['square-miles']}}
+        </div>
+        <div class="clear">
+            <p> State Time Zone 1 <span>:</span> </p> {{stateDetailInfo['time-zone-1']}}
+        </div>
+        <div class="clear">
+            <p> State Time Zone 2 <span>:</span> </p> {{stateDetailInfo['time-zone-2']}}
+        </div>
+        <div class="clear">
+            <p> State Dst <span>:</span> </p> {{stateDetailInfo.dst}}
+        </div>
+	</div>
+    
+</div>

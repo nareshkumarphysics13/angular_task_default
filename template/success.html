@@ -1,0 +1,16 @@
+<div class="container" ng-controller="successController">
+	<div class="banner-top">
+		<h1>State List</h1>
+		<div class="banner-bottom">
+			<div class="bnr-one">			
+				<div class="clearfix"></div>
+                <div class="bnr-left" ng-repeat="stateListInfo in stateInfoList">
+					<a href="#/state/{{stateListInfo.name}}">
+                        <p>{{stateListInfo.name}}</p>
+                    </a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>

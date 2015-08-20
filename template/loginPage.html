@@ -1,0 +1,28 @@
+<div class="container" ng-controller="loginController">
+	<div class="banner-top">
+		<h1>SignIn</h1>
+		<div class="banner-bottom">
+			<div class="bnr-one">
+				<div class="bnr-left">
+					<p>Username</p>
+				</div>
+				<div class="bnr-right">
+					<input name="username" type="text" ng-model="login.userName" placeholder="Enter your username" required>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bnr-one">
+				<div class="bnr-left">
+					<p>Password</p>
+				</div>
+				<div class="bnr-right">
+					<input name="password"  ng-model="login.Password" placeholder="Enter your password" type="password" required>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bnr-btn">
+				<input type="button" ng-click="submitForm()" value="Login">
+			</div>
+		</div>
+	</div>
+</div>

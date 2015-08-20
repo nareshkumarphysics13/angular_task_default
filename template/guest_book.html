@@ -1,0 +1,52 @@
+<div class="container" ng-controller="gustBookController">
+	<div class="banner-top left_panel">
+		<h1>Guest Book</h1>
+		<div class="banner-bottom">
+			<div class="bnr-one">
+				<div class="bnr-left">
+					<p>Mobile</p>
+				</div>
+				<div class="bnr-right">
+					<input name="username" type="tel" ng-model="gBook.mobile" placeholder="Enter your mobile number" required>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bnr-one">
+				<div class="bnr-left">
+					<p>Message</p>
+				</div>
+				<div class="bnr-right">
+                    <textarea rows="5" cols="25" ng-model="gBook.msg" name="message" placeholder="Enter your message"></textarea>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bnr-btn">
+                <input type="button" ng-click="saveMsg()" value="Save Message">
+			</div>
+		</div>
+	</div>
+    <!-- Right Panel start -->
+    <div class="banner-top right_panel">
+		<h1>Guest Book Info</h1>
+		<div class="banner-bottom">
+			<div class="bnr-one">
+				<div class="bnr-left">
+					<p>Mobile</p>
+				</div>
+				<div class="bnr-right">
+                    <p>Message</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="bnr-one" ng-repeat="gBInfo in gustBookInfo">
+				<div class="bnr-left">
+					{{gBInfo.mobile}}
+				</div>
+				<div class="bnr-right">
+					{{gBInfo.message}}
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
